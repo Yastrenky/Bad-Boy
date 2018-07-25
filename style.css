@@ -1,0 +1,136 @@
+body {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("CAt/background/layer_2.png");
+  background-repeat: repeat-y;
+  overflow: hidden;
+  margin: 0px
+}
+
+
+
+.tree-container {
+  animation: tree-cycle 8s steps(1000000);
+  position: absolute;
+  height: 108%;
+  width: 100%;
+  background-image: url("CAt/background/layer_3.png");
+  background-size: 1952px 120%;
+  background-repeat: repeat;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.img-boy {
+  animation: walk-cycle 500ms steps(4) infinite,
+   move-cycle 10s steps(1000) 2s;
+  animation-fill-mode: forwards;
+  background: url("elgorra1.png");
+  height: 450px;
+  width: 432px;
+  position: absolute;
+  bottom: 1px;
+  left: -10%;
+  margin-left: 200px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+@keyframes move-cycle {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(500%, 0);
+  }
+}
+
+@keyframes walk-cycle {
+  0% {
+    background-position: 0px 0;
+  }
+  100% {
+    background-position: -1728px 0;
+  }
+}
+
+@keyframes tree-cycle {
+  0% {
+    background-position: 0px 0;
+  }
+
+  52%{
+    background-color: rgba(0, 0, 0, 0.88);
+  }
+  100% {
+    background-position: -1950px 0;
+  }
+}
+@keyframes gras-cycle {
+  0% {
+    background-position: 0px 0;
+  }
+
+
+  100% {
+    background-position: -1950px 0;
+  }
+}
+
+.footer {
+  animation: gras-cycle 8.5s steps(10000);
+  animation-fill-mode: forwards;
+  background-image: url("cattails2.png");
+  position: absolute;
+  width: 200%;
+  height: 9%;
+  bottom: 0px;
+  background-size: 348px 100%;
+  background-repeat: repeat;
+  overflow: hidden;
+
+}
+
+.message-container {
+font-family: 'Gloria Hallelujah', cursive;
+  letter-spacing: 1px;
+  font-size: 23px;
+  text-align: center;
+  top: 70px;
+  position: fixed;
+  left: 32%;
+}
+.invert-tree{
+  animation: gras-cycle 8.5s steps(10000);
+      animation-fill-mode: forwards;
+      background-image: url("treeinvert.png");
+      width: 200%;
+      height: 31%;
+      position: absolute;
+      background-size: 410px 102%;
+      background-repeat: repeat;
+      overflow: hidden;
+}
+@keyframes move-owl-cycle {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-70%, 0);
+  }
+}
+.owlinatree{
+  animation: move-owl-cycle 1s steps(10000) 7.5s;
+  animation-fill-mode: forwards;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-image: url(3-owls-in-tree.png);
+  position: absolute;
+  width: 14%;
+  height: 88%;
+  background-size: 297px;
+  right: -15%;
+  margin: 0;
+}
